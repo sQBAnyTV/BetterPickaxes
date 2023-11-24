@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "betterpickaxes",
+	"version": "${version}",
+	"name": "BetterPickaxes",
+	"description": "This mod adds you more ores, ingots and better pickaxes",
+	"authors": [
+		"sQBAny!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/betterpickaxes/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.sqbany.betterpickaxes.BetterPickaxes"
+		],
+		"client": [
+			"net.sqbany.betterpickaxes.BetterPickaxesClient"
+		],
+		"fabric-datagen": [
+			"net.sqbany.betterpickaxes.BetterPickaxesDataGenerator"
+		]
+	},
+	"mixins": [
+		"betterpickaxes.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.24",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
